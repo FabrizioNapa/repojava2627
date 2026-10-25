@@ -1,4 +1,4 @@
-package ut2EstrucControl;
+package ut2EstructControl;
 
 public class Ejercicio11While {
 

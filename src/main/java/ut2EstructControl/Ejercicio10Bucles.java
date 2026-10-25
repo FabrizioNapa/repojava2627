@@ -1,4 +1,4 @@
-package ut2EstrucControl;
+package ut2EstructControl;
 import java.util.Iterator;
 import java.util.Scanner;
 
