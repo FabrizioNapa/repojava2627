@@ -6,18 +6,17 @@ public class Ejercicio16DecimalBinario {
 	
 	
 public static void decimalBinario(int numero) {
-	int iResto = 0;
+	int iBit = 0;
 	int iNumOriginal = numero;
 	String strResultado = "";
-
 	if (numero == 0) {
 		//si el numero es 0
 		strResultado = "0";
 	} else {
 	    while (numero > 0) {
-	        iResto = numero & 1;   
+	        iBit = numero & 1;   
 	        // Lee el primer bit del numero
-	        strResultado = iResto + strResultado;
+	        strResultado = iBit + strResultado;
 	        numero >>= 1;     
 	        // Desecha el bit que hemos leido
 	    }
@@ -39,8 +38,10 @@ public static void decimalBinario(int numero) {
 			decimalBinario(iNum);
 		//si el usuario usa algo que no sea un numero en decimal
 		}catch(InputMismatchException ime){ 
+			System.out.println("Introduce un numero");
 		//si hay cualquier otro error	
 		}catch(Exception e){
+			System.out.println("Ha oocurrido un error");
 		//ceramos el escaner para ahorrar recursos	
 		}finally {
 			sc.close();
