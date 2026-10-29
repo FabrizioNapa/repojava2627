@@ -31,7 +31,7 @@ public static void decimalBinario(int numero) {
 	public static void main(String[] args) {
 		int iNum;
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Introduce un numero en decimal: ");
+		System.out.println("Introduce un numero en decimal: ");
 		//comprobamos que el numero dado es valido
 		try {
 			iNum = sc.nextInt();

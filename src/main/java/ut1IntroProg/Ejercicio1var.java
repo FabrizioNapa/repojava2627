@@ -20,6 +20,8 @@ public class Ejercicio1var {
 		otroNum=18;
 		System.out.println(otroNum);
 		//Las constantes en MAYÚSCULA
+		final double PI = 3.14159;
+		final int MAYORIA_EDAD = 18;
 		
 	}
 
